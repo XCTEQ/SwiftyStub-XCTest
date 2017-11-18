@@ -1,0 +1,6 @@
+framework module Pods_SwiftStubs {
+  umbrella header "Pods-SwiftStubs-umbrella.h"
+
+  export *
+  module * { export * }
+}

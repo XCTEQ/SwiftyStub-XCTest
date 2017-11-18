@@ -1,0 +1,63 @@
+PODS:
+  - Embassy (4.0.0)
+  - EnvoyAmbassador (4.0.0):
+    - Embassy (~> 4.0)
+  - GCDWebServer (3.4.1):
+    - GCDWebServer/Core (= 3.4.1)
+  - GCDWebServer/Core (3.4.1)
+  - Hippolyte (0.1.0)
+  - Mockingjay (2.0.0):
+    - Mockingjay/Core (= 2.0.0)
+    - Mockingjay/XCTest (= 2.0.0)
+  - Mockingjay/Core (2.0.0):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.0):
+    - Mockingjay/Core
+  - OHHTTPStubs (6.0.0):
+    - OHHTTPStubs/Default (= 6.0.0)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - OHHTTPStubs/Swift (6.0.0):
+    - OHHTTPStubs/Default
+  - SBTUITestTunnel (2.2.1):
+    - SBTUITestTunnel/Client (= 2.2.1)
+    - SBTUITestTunnel/Server (= 2.2.1)
+  - SBTUITestTunnel/Client (2.2.1)
+  - SBTUITestTunnel/Server (2.2.1):
+    - GCDWebServer (~> 3.0)
+  - Swifter (1.3.3)
+  - URITemplate (2.0.2)
+
+DEPENDENCIES:
+  - Embassy
+  - EnvoyAmbassador
+  - Hippolyte
+  - Mockingjay
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+  - SBTUITestTunnel
+  - Swifter
+
+SPEC CHECKSUMS:
+  Embassy: a01efce4e30c1c6a3c19e6aa27e1b75ca0e1efd3
+  EnvoyAmbassador: 651fd594fe57a80c12087502f911642c34efc38a
+  GCDWebServer: 1db60034fe0e78a4a8524bd6c7cd97cd3c589870
+  Hippolyte: cfd4d8c742ac114545699a5de443d7df036229e8
+  Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
+  SBTUITestTunnel: 966f5b2d51b417247b47583febed958e5d1c8af5
+  Swifter: 3fef6ec31449a8e3a29cf8551a9fe23485f15bc0
+  URITemplate: d822aaa2f8ec9dcffffd13baa58bf9ee007e96cb
+
+PODFILE CHECKSUM: c4e4eae6fc9532430c9013792034c559de133b0e
+
+COCOAPODS: 1.2.0

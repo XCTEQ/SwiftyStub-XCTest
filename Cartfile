@@ -1,0 +1,6 @@
+:github "httpswift/swifter"
+github "AliSoftware/OHHTTPStubs"
+github "JanGorman/Hippolyte"
+github "kylef/Mockingjay"
+github "envoy/Embassy"
+github "envoy/Ambassador"
