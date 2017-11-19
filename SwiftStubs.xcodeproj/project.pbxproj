@@ -13,9 +13,7 @@
 		9B8F15EA1FC22140001A34C6 /* VaporStubTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E91FC22140001A34C6 /* VaporStubTest.swift */; };
 		9B8F47F11FC2298A001A34C6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9B8F30621FC22967001A34C6 /* .gitignore */; };
 		9B8F47F21FC2298A001A34C6 /* Package.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 9B8F30631FC22967001A34C6 /* Package.resolved */; };
-		9B8F47F31FC2298A001A34C6 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F30641FC22967001A34C6 /* Package.swift */; };
 		9B8F47F41FC2298A001A34C6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B8F30651FC22967001A34C6 /* README.md */; };
-		9B8F47F51FC2298A001A34C6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F30681FC22967001A34C6 /* main.swift */; };
 		9B99FB671FC08C3700E6BFF0 /* MockingJayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB661FC08C3700E6BFF0 /* MockingJayTest.swift */; };
 		9B99FB691FC08E6B00E6BFF0 /* HippolyteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB681FC08E6B00E6BFF0 /* HippolyteTest.swift */; };
 		9B99FB6B1FC0918B00E6BFF0 /* OHHTTPTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB6A1FC0918B00E6BFF0 /* OHHTTPTest.swift */; };
@@ -548,10 +546,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B8F15EA1FC22140001A34C6 /* VaporStubTest.swift in Sources */,
-				9B8F47F51FC2298A001A34C6 /* main.swift in Sources */,
 				9B8F15E41FC188E2001A34C6 /* DefaultRouter.swift in Sources */,
 				9BF0B1FE1FBE282F006F7F68 /* RealNetworkUITests.swift in Sources */,
-				9B8F47F31FC2298A001A34C6 /* Package.swift in Sources */,
 				9B99FB6D1FC0A20B00E6BFF0 /* HTTPStubs.swift in Sources */,
 				9B8F15E81FC19BD9001A34C6 /* EmbassyBase.swift in Sources */,
 				9B8F15E61FC18930001A34C6 /* EmbassyStubTest.swift in Sources */,
