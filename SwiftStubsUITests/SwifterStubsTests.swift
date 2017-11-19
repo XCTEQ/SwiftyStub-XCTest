@@ -19,7 +19,6 @@ class SwifterStubsTests: XCTestCase {
         dynamicStubs.setUp()
         app.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
         continueAfterFailure = false
-    
     }
     
     override func tearDown() {
