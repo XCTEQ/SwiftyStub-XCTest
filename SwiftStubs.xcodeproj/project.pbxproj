@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B8F15E41FC188E2001A34C6 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */; };
+		9B8F15E61FC18930001A34C6 /* EmbassyStubTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */; };
+		9B8F15E81FC19BD9001A34C6 /* EmbassyBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */; };
 		9B99FB671FC08C3700E6BFF0 /* MockingJayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB661FC08C3700E6BFF0 /* MockingJayTest.swift */; };
 		9B99FB691FC08E6B00E6BFF0 /* HippolyteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB681FC08E6B00E6BFF0 /* HippolyteTest.swift */; };
 		9B99FB6B1FC0918B00E6BFF0 /* OHHTTPTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99FB6A1FC0918B00E6BFF0 /* OHHTTPTest.swift */; };
@@ -51,6 +54,9 @@
 		587774653F98CE45195A923C /* Pods_SwiftStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CF728D5B217F93AE4905DA /* Pods_SwiftStubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86244525C78B7942CC0B29A1 /* Pods-SwiftStubs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStubs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStubs/Pods-SwiftStubs.debug.xcconfig"; sourceTree = "<group>"; };
+		9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
+		9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbassyStubTest.swift; sourceTree = "<group>"; };
+		9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbassyBase.swift; sourceTree = "<group>"; };
 		9B99FB661FC08C3700E6BFF0 /* MockingJayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingJayTest.swift; sourceTree = "<group>"; };
 		9B99FB681FC08E6B00E6BFF0 /* HippolyteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HippolyteTest.swift; sourceTree = "<group>"; };
 		9B99FB6A1FC0918B00E6BFF0 /* OHHTTPTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHHTTPTest.swift; sourceTree = "<group>"; };
@@ -162,6 +168,9 @@
 				9BF0B1FF1FBE282F006F7F68 /* Info.plist */,
 				9B99FB6C1FC0A20B00E6BFF0 /* HTTPStubs.swift */,
 				9BAC2D361FC0A42500A395D3 /* SwifterStubsTests.swift */,
+				9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */,
+				9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */,
+				9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */,
 			);
 			path = SwiftStubsUITests;
 			sourceTree = "<group>";
@@ -493,8 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8F15E41FC188E2001A34C6 /* DefaultRouter.swift in Sources */,
 				9BF0B1FE1FBE282F006F7F68 /* RealNetworkUITests.swift in Sources */,
 				9B99FB6D1FC0A20B00E6BFF0 /* HTTPStubs.swift in Sources */,
+				9B8F15E81FC19BD9001A34C6 /* EmbassyBase.swift in Sources */,
+				9B8F15E61FC18930001A34C6 /* EmbassyStubTest.swift in Sources */,
 				9BAC2D371FC0A42500A395D3 /* SwifterStubsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
