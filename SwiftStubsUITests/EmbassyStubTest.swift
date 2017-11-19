@@ -16,11 +16,11 @@ class EmbassyStubTest: EmbassyBase {
     func testEmbassyStub() {
         
         router[DefaultRouter.fetchUsersPath] = DelayResponse(JSONResponse(handler: { _ in
-            return ["name": "Shashi", "location": "Paris"]
+            return ["name": "Shashi", "location": "MockedCity"]
         }))
         
         app.launch()
         app.buttons["MakeNetworkRequest"].tap()
-        XCTAssert(app.staticTexts["Paris"].exists)
+        XCTAssert(app.staticTexts["MockedCity"].exists)
     }
 }

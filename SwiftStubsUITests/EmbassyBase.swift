@@ -45,6 +45,7 @@ class EmbassyBase: XCTestCase {
     // set up XCUIApplication
     private func setupApp() {
         app = XCUIApplication()
+        app.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
     }
     
     override func tearDown() {
