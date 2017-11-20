@@ -24,13 +24,11 @@ class MockingJayTest: XCTestCase {
     
     func testStubWithMockingjay() {
         guard let gitUrl = URL(string: "https://api.github.com/users/shashikant86") else { return }
-        // 1.
+        
         let path = Bundle(for: type(of: self)).path(forResource: "Feed", ofType: "json")!
-        
-        // 2.
+    
         let data = NSData(contentsOfFile: path)!
-        
-        // 3.
+    
         self.stub(uri("https://api.github.com/users/shashikant86"), jsonData(data as Data))
         
         let promise = expectation(description: "Simple Request")
@@ -50,6 +48,4 @@ class MockingJayTest: XCTestCase {
             }.resume()
         waitForExpectations(timeout: 5, handler: nil)
     }
-    
-    
 }

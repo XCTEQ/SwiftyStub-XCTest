@@ -31,9 +31,8 @@ class SwifterStubsTests: XCTestCase {
         swifterapp.launch()
         dynamicStubs.setupStub(url: "/users/shashikant86", filename: "Feed", method: .GET)
         swifterapp.buttons["MakeNetworkRequest"].tap()
-        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates
-        let location = XCUIApplication().staticTexts["Paris"]
-        XCTAssertTrue(location.exists)
+        wait(forElement: swifterapp.staticTexts["Swifter"], timeout: 3)
+        XCTAssert(swifterapp.staticTexts["Swifter"].exists)
     }
     
 }

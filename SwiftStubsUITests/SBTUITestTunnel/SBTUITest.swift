@@ -34,8 +34,8 @@ class SBTUITest: XCTestCase {
         
         _ = sbtapp.stubRequests(matching: SBTRequestMatch.init(url: "http://localhost:8080/users/shashikant86"), response: SBTStubResponse(response: ["location": "SBT"]))
         sbtapp.buttons["MakeNetworkRequest"].tap()
-        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates 
-        XCTAssert(app.staticTexts["SBT"].exists)
+        wait(forElement: sbtapp.staticTexts["SBT"], timeout: 3)
+        XCTAssert(sbtapp.staticTexts["SBT"].exists)
         
     }
     

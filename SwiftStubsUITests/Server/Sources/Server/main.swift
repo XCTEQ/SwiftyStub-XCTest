@@ -8,7 +8,7 @@ drop.get("hello") { req in
 
 drop.get("users/shashikant86") { request in
     var json = JSON()
-    try json.set("location", "SD")
+    try json.set("location", "Vapor")
     return json
 }
 

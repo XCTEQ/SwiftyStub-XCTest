@@ -25,6 +25,6 @@ class VaporStubTest: XCTestCase {
     func testVaporStubs() {
         vaporapp.buttons["MakeNetworkRequest"].tap()
         sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates 
-        XCTAssert(app.staticTexts["SD"].exists)
+        XCTAssert(app.staticTexts["Vapor"].exists)
     }
 }

@@ -123,6 +123,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B55446A1FC353C5001D2D2B /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				9B99FB6C1FC0A20B00E6BFF0 /* HTTPStubs.swift */,
+				9BAC2D361FC0A42500A395D3 /* SwifterStubsTests.swift */,
+			);
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+		9B55446B1FC353FB001D2D2B /* Embassy */ = {
+			isa = PBXGroup;
+			children = (
+				9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */,
+				9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */,
+				9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */,
+			);
+			path = Embassy;
+			sourceTree = "<group>";
+		};
+		9B55446C1FC35423001D2D2B /* SBTUITestTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				9B5544681FC35047001D2D2B /* SBTUITest.swift */,
+			);
+			path = SBTUITestTunnel;
+			sourceTree = "<group>";
+		};
+		9B55446D1FC3544F001D2D2B /* Vapor */ = {
+			isa = PBXGroup;
+			children = (
+				9B8F15E91FC22140001A34C6 /* VaporStubTest.swift */,
+			);
+			path = Vapor;
+			sourceTree = "<group>";
+		};
+		9B55446E1FC355C4001D2D2B /* RealNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9BF0B1FD1FBE282F006F7F68 /* RealNetworkUITests.swift */,
+			);
+			path = RealNetwork;
+			sourceTree = "<group>";
+		};
 		9B8F15EB1FC2295B001A34C6 /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,17 +246,14 @@
 		9BF0B1FC1FBE282F006F7F68 /* SwiftStubsUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9B55446E1FC355C4001D2D2B /* RealNetwork */,
+				9B55446D1FC3544F001D2D2B /* Vapor */,
+				9B55446C1FC35423001D2D2B /* SBTUITestTunnel */,
+				9B55446B1FC353FB001D2D2B /* Embassy */,
+				9B55446A1FC353C5001D2D2B /* Swifter */,
 				9B8F15EB1FC2295B001A34C6 /* Server */,
 				9BF0B20D1FBE47D9006F7F68 /* Feed.json */,
-				9BF0B1FD1FBE282F006F7F68 /* RealNetworkUITests.swift */,
 				9BF0B1FF1FBE282F006F7F68 /* Info.plist */,
-				9B99FB6C1FC0A20B00E6BFF0 /* HTTPStubs.swift */,
-				9BAC2D361FC0A42500A395D3 /* SwifterStubsTests.swift */,
-				9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */,
-				9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */,
-				9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */,
-				9B8F15E91FC22140001A34C6 /* VaporStubTest.swift */,
-				9B5544681FC35047001D2D2B /* SBTUITest.swift */,
 			);
 			path = SwiftStubsUITests;
 			sourceTree = "<group>";

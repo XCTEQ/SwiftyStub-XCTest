@@ -16,12 +16,12 @@ class EmbassyStubTest: EmbassyBase {
     func testEmbassyStub() {
         
         router[DefaultRouter.fetchUsersPath] = DelayResponse(JSONResponse(handler: { _ in
-            return ["name": "Shashi", "location": "MockedCity"]
+            return ["name": "Shashi", "location": "Embassy"]
         }))
         
         embassyapp.launch()
         embassyapp.buttons["MakeNetworkRequest"].tap()
-        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates 
-        XCTAssert(embassyapp.staticTexts["MockedCity"].exists)
+        wait(forElement: embassyapp.staticTexts["Embassy"], timeout: 3)
+        XCTAssert(embassyapp.staticTexts["Embassy"].exists)
     }
 }
