@@ -17,7 +17,7 @@ class EmbassyBase: XCTestCase {
     var router: Router!
     var eventLoop: EventLoop!
     var server: HTTPServer!
-    var app: XCUIApplication!
+    var embassyapp: XCUIApplication!
     
     var eventLoopThreadCondition: NSCondition!
     var eventLoopThread: Thread!
@@ -44,13 +44,13 @@ class EmbassyBase: XCTestCase {
     
     // set up XCUIApplication
     private func setupApp() {
-        app = XCUIApplication()
-        app.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
+        embassyapp = XCUIApplication()
+        embassyapp.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
     }
     
     override func tearDown() {
         super.tearDown()
-        app.terminate()
+        embassyapp.terminate()
         server.stopAndWait()
         eventLoopThreadCondition.lock()
         eventLoop.stop()

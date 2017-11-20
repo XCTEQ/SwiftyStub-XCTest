@@ -45,6 +45,8 @@ DEPENDENCIES:
   - OHHTTPStubs
   - OHHTTPStubs/Swift
   - SBTUITestTunnel
+  - SBTUITestTunnel/Client
+  - SBTUITestTunnel/Server
   - Swifter
 
 SPEC CHECKSUMS:
@@ -58,6 +60,6 @@ SPEC CHECKSUMS:
   Swifter: 3fef6ec31449a8e3a29cf8551a9fe23485f15bc0
   URITemplate: d822aaa2f8ec9dcffffd13baa58bf9ee007e96cb
 
-PODFILE CHECKSUM: c4e4eae6fc9532430c9013792034c559de133b0e
+PODFILE CHECKSUM: a49374aac74989dfec9dc2fe7d51ac770b08bee5
 
 COCOAPODS: 1.2.0

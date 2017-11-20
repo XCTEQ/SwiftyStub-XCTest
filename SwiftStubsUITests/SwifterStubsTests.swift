@@ -11,13 +11,13 @@ import Swifter
 
 class SwifterStubsTests: XCTestCase {
     
-    let app = XCUIApplication()
+    let swifterapp = XCUIApplication()
     let dynamicStubs = HTTPDynamicStubs()
     
     override func setUp() {
         super.setUp()
         dynamicStubs.setUp()
-        app.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
+        swifterapp.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
         continueAfterFailure = false
     }
     
@@ -28,10 +28,10 @@ class SwifterStubsTests: XCTestCase {
     }
     
     func testWithSwifterStubs() {
-        app.launch()
+        swifterapp.launch()
         dynamicStubs.setupStub(url: "/users/shashikant86", filename: "Feed", method: .GET)
-        app.buttons["MakeNetworkRequest"].tap()
-        sleep(3)
+        swifterapp.buttons["MakeNetworkRequest"].tap()
+        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates
         let location = XCUIApplication().staticTexts["Paris"]
         XCTAssertTrue(location.exists)
     }

@@ -89,17 +89,17 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Embassy/Embassy.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/EnvoyAmbassador/EnvoyAmbassador.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GCDWebServer/GCDWebServer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SBTUITestTunnel/SBTUITestTunnel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Embassy/Embassy.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/EnvoyAmbassador/EnvoyAmbassador.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swifter/Swifter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Embassy/Embassy.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/EnvoyAmbassador/EnvoyAmbassador.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GCDWebServer/GCDWebServer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SBTUITestTunnel/SBTUITestTunnel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Embassy/Embassy.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/EnvoyAmbassador/EnvoyAmbassador.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Swifter/Swifter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

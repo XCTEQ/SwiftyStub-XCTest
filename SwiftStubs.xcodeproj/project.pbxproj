@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B5544691FC35047001D2D2B /* SBTUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5544681FC35047001D2D2B /* SBTUITest.swift */; };
 		9B8F15E41FC188E2001A34C6 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */; };
 		9B8F15E61FC18930001A34C6 /* EmbassyStubTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */; };
 		9B8F15E81FC19BD9001A34C6 /* EmbassyBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */; };
@@ -58,6 +59,7 @@
 		587774653F98CE45195A923C /* Pods_SwiftStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CF728D5B217F93AE4905DA /* Pods_SwiftStubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86244525C78B7942CC0B29A1 /* Pods-SwiftStubs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStubs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStubs/Pods-SwiftStubs.debug.xcconfig"; sourceTree = "<group>"; };
+		9B5544681FC35047001D2D2B /* SBTUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBTUITest.swift; sourceTree = "<group>"; };
 		9B8F15E31FC188E2001A34C6 /* DefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
 		9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbassyStubTest.swift; sourceTree = "<group>"; };
 		9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbassyBase.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				9B8F15E51FC18930001A34C6 /* EmbassyStubTest.swift */,
 				9B8F15E71FC19BD9001A34C6 /* EmbassyBase.swift */,
 				9B8F15E91FC22140001A34C6 /* VaporStubTest.swift */,
+				9B5544681FC35047001D2D2B /* SBTUITest.swift */,
 			);
 			path = SwiftStubsUITests;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B8F15EA1FC22140001A34C6 /* VaporStubTest.swift in Sources */,
+				9B5544691FC35047001D2D2B /* SBTUITest.swift in Sources */,
 				9B8F15E41FC188E2001A34C6 /* DefaultRouter.swift in Sources */,
 				9BF0B1FE1FBE282F006F7F68 /* RealNetworkUITests.swift in Sources */,
 				9B99FB6D1FC0A20B00E6BFF0 /* HTTPStubs.swift in Sources */,
@@ -705,6 +709,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ENABLE_UITUNNEL=1",
+				);
 				INFOPLIST_FILE = SwiftStubs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftStubs;
@@ -736,6 +745,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ENABLE_UITUNNEL=1",
+				);
 				INFOPLIST_FILE = SwiftStubsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftStubsTests;
@@ -769,6 +783,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ENABLE_UITUNNEL=1",
+				);
 				INFOPLIST_FILE = SwiftStubsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftStubsUITests;

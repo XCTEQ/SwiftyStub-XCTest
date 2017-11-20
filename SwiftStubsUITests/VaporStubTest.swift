@@ -9,13 +9,13 @@
 import XCTest
 
 class VaporStubTest: XCTestCase {
-    let app = XCUIApplication()
+    let vaporapp = XCUIApplication()
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         
-        app.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
-        app.launch()
+        vaporapp.launchEnvironment = ["BASEURL" : "http://localhost:8080"]
+        vaporapp.launch()
     }
     
     override func tearDown() {
@@ -23,7 +23,8 @@ class VaporStubTest: XCTestCase {
     }
     
     func testVaporStubs() {
-        app.buttons["MakeNetworkRequest"].tap()
+        vaporapp.buttons["MakeNetworkRequest"].tap()
+        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates 
         XCTAssert(app.staticTexts["SD"].exists)
     }
 }

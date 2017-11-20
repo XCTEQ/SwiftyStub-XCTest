@@ -19,8 +19,9 @@ class EmbassyStubTest: EmbassyBase {
             return ["name": "Shashi", "location": "MockedCity"]
         }))
         
-        app.launch()
-        app.buttons["MakeNetworkRequest"].tap()
-        XCTAssert(app.staticTexts["MockedCity"].exists)
+        embassyapp.launch()
+        embassyapp.buttons["MakeNetworkRequest"].tap()
+        sleep(3) //Yes how UITest Work ! Maybe replace with XCTWaiter and Predicates 
+        XCTAssert(embassyapp.staticTexts["MockedCity"].exists)
     }
 }
