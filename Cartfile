@@ -1,4 +1,4 @@
-:github "httpswift/swifter"
+github "httpswift/swifter"
 github "AliSoftware/OHHTTPStubs"
 github "JanGorman/Hippolyte"
 github "kylef/Mockingjay"
